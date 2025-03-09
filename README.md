@@ -1,54 +1,54 @@
 🌍 Assets
-Use the following URL pattern to load assets from this repository. Simply replace "path-to-file" with the desired file name:
+Use the following URL pattern to load assets from this repository. Simply replace "path-to-file" with the desired file name an dmake sure the sub folder on assets is correct:
 
-https://raw.githubusercontent.com/janibehm/assets/main/assets/path-to-file
+https://raw.githubusercontent.com/janibehm/assets/main/assets/textures/path-to-file
 
 You can load assets from https://polyhaven.com/
 
 Example: Load an Environment Texture in JavaScript
 
 ```javascript
-
-import { TextureLoader, EquirectangularReflectionMapping } from 'three';
+import { TextureLoader, EquirectangularReflectionMapping } from "three";
 
 const envTexturePromise = new TextureLoader()
-  .loadAsync('https://raw.githubusercontent.com/janibehm/assets/main/assets/environment.jpg')
+  .loadAsync(
+    "https://raw.githubusercontent.com/janibehm/assets/main/assets/textures/environment.jpg"
+  )
   .then((texture) => {
     texture.mapping = EquirectangularReflectionMapping;
     return texture;
   })
   .catch((error) => {
-    console.warn('Failed to load environment texture:', error);
+    console.warn("Failed to load environment texture:", error);
     return null; // Handle the error gracefully
   });
-
 ```
 
 🚀 How to Push Changes Without Overwriting Anything
 Follow these steps to safely push your changes while ensuring you don’t overwrite existing work.
 
 1. Pull the Latest Changes (Important)
-Before pushing, always pull the latest changes from GitHub to prevent overwriting:
+   Before pushing, always pull the latest changes from GitHub to prevent overwriting:
 
-git pull origin main --rebase  # Replace 'main' with your branch if needed
+git pull origin main --rebase # Replace 'main' with your branch if needed
 
 3. Stage Your Changes
-Add all new, modified, and deleted files to the next commit:
+   Add all new, modified, and deleted files to the next commit:
 
 git add .
 
 3. Commit Your Changes
-Save your changes with a meaningful commit message:
+   Save your changes with a meaningful commit message:
 
 git commit -m "Describe your changes here"
 
 4. Push Your Changes to GitHub
-Now, push your updates without overwriting anything:
+   Now, push your updates without overwriting anything:
 
 git push origin main
 
 5. Handling Merge Conflicts (If Needed)
-   
+
 If you encounter conflicts during git pull, manually resolve them, then run:
 
 git add .
