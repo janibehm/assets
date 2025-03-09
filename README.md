@@ -12,6 +12,7 @@ Example: Load an Environment Texture in JavaScript
 import { TextureLoader, EquirectangularReflectionMapping } from 'three';
 
 // Load environment texture with error handling
+
 const envTexturePromise = new TextureLoader()
   .loadAsync('https://raw.githubusercontent.com/janibehm/assets/main/assets/environment.jpg')
   .then((texture) => {
