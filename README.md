@@ -13,6 +13,8 @@ import { TextureLoader, EquirectangularReflectionMapping } from 'three';
 
 // Load environment texture with error handling
 
+```javascript
+
 const envTexturePromise = new TextureLoader()
   .loadAsync('https://raw.githubusercontent.com/janibehm/assets/main/assets/environment.jpg')
   .then((texture) => {
@@ -23,6 +25,8 @@ const envTexturePromise = new TextureLoader()
     console.warn('Failed to load environment texture:', error);
     return null; // Handle the error gracefully
   });
+
+```
 
 🚀 How to Push Changes Without Overwriting Anything
 Follow these steps to safely push your changes while ensuring you don’t overwrite existing work.
