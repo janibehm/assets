@@ -5,8 +5,6 @@ https://raw.githubusercontent.com/janibehm/assets/main/assets/path-to-file
 
 You can load assets from https://polyhaven.com/
 
-When you want to load assets from your local environmet to this repository make sure to 
-
 Example: Load an Environment Texture in JavaScript
 
 import { TextureLoader, EquirectangularReflectionMapping } from 'three';
