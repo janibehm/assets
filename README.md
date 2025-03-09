@@ -7,11 +7,9 @@ You can load assets from https://polyhaven.com/
 
 Example: Load an Environment Texture in JavaScript
 
-import { TextureLoader, EquirectangularReflectionMapping } from 'three';
-
-// Load environment texture with error handling
-
 ```javascript
+
+import { TextureLoader, EquirectangularReflectionMapping } from 'three';
 
 const envTexturePromise = new TextureLoader()
   .loadAsync('https://raw.githubusercontent.com/janibehm/assets/main/assets/environment.jpg')
