@@ -1,5 +1,5 @@
 🌍 Assets
-Use the following URL pattern to load assets from this repository. Simply replace "path-to-file" with the desired file name an dmake sure the sub folder on assets is correct:
+Use the following URL pattern to load assets from this repository. Simply replace "path-to-file" with the desired file name and make sure the sub folder on assets is correct:
 
 https://raw.githubusercontent.com/janibehm/assets/main/assets/textures/path-to-file
 
